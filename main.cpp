@@ -26,6 +26,11 @@ result find(double x, double eps) {
   
   return res;
 }
+
+void printPoint(double x, double y) {
+	
+}
+
 int main() {
 	int start = 4, end = 6; // промежуток [4, 6]
 	result res;
@@ -34,6 +39,8 @@ int main() {
 		res = find(i, 0.01);
 		cout << res.iterations << " iterations" << endl;
 		cout << res.value << " value" << endl << endl;
+		
+		printPoint(i, res.value);
 	}
 	
 	return 0;
